@@ -22,7 +22,8 @@ spec:
         name: gitops-demo
         resources: {}
         envFrom:
-          - secretRef: mysqlcreds
+          - secretRef:
+              name: mysqlcreds
 ---
 
 apiVersion: v1
